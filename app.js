@@ -20,6 +20,7 @@ app.use(express.json());
 app.use('/api/user', routes);
 app.use('/post', post);
 
-app.listen('8080', ()=> {
+const port = process.env.PORT || 8080
+app.listen(port, ()=> {
     console.log('server is running on port 8080')}
 );
