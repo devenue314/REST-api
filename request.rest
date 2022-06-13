@@ -1,0 +1,28 @@
+http://localhost:8080
+
+###
+POST http://localhost:8080/api/user
+
+###
+POST http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+	"name":"account7",
+	"email":"account7@hotmail.com",
+	"password":"account7"
+}
+
+###
+POST http://localhost:8080/api/user/login
+Content-Type: application/json
+
+{
+	"email":"account2@hotmail.com",
+	"password":"account2"
+}
+
+###
+GET http://localhost:8080/post
+Content-Type: application/json
+xheader:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ4VXNlciI6IjYyYTU3MmU3N2IzODk0ZTM5MWJiMDZjMCIsImlhdCI6MTY1NTA4MTcwNX0.JwkmllU9tadiuFn2mNGrM-RbToontKAXTVE6mk9I0uE
